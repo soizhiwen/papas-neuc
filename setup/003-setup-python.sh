@@ -2,9 +2,6 @@
 ### PYTHON ### PYTHON ### PYTHON ### PYTHON ### PYTHON ### PYTHON ### PYTHON ###
 ################################################################################
 
-
-# REFER : https://www.youtube.com/watch?v=swjJ1RJ6ZZA
-
 ### As ROOT : Install Programming Language - Python
 su -
 apt -y install build-essential zlib1g-dev libncurses5-dev libgdbm-dev \
@@ -26,19 +23,8 @@ python3 --version
 python3.10 --version
 python3.10 -m pip install --upgrade pip
 python3.10 -m pip install virtualenv
-# python3.9 -m pip install ipykernel
-# python3.9 -m ipykernel install --user
-
-# https://tecnstuff.net/how-to-install-opencv-on-debian-10/
-
-
-
 
 ### As NORMAL user : Prepare a Virtual Environment for Python
-# mkdir -p ~/virtualenv
-# cd ~/virtualenv
-# python3.9 -m venv .
-# python3.9 -m virtualenv .
 which virtualenv
 which python3.10
 virtualenv -p /usr/local/bin/python3.10 venv
