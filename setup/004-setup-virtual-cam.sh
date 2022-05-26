@@ -32,4 +32,3 @@ modprobe v4l2loopback \
 	card_label="OpenCV Camera"
 
 v4l2-ctl --list-devices -d6
-

@@ -10,9 +10,7 @@ cd ~
 wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
 tar -xf Python-3.10.4.tgz
 cd Python-3.10.4
-./configure --enable-optimizations
-make -j$(nproc)
-make altinstall
+./configure --enable-optimizations && make -j$(nproc) && make altinstall
 cd ~
 rm -rf Python-3.10.4
 rm -rf Python-3.10.4.tgz
@@ -33,4 +31,3 @@ source /usr/local/bin/venv/bin/activate
 python3.10 -m pip install --upgrade pip
 python3.10 -m pip install opencv-contrib-python-headless pyserial numpy scipy
 python3.10 -c "import cv2; print(cv2.__version__)"
-

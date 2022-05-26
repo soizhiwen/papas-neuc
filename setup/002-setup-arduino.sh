@@ -9,6 +9,7 @@ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.
 arduino-cli version
 
 ### Step 2 : Prepare Board Library
+arduino-cli core update-index
 arduino-cli core install arduino:samd
 arduino-cli core list
 
@@ -22,7 +23,7 @@ apt -y install picocom
 # Enter Serial Com
 picocom -b 9600 -r -l /dev/ttyACM0
 # Quit Serial Com
-# To exit picocom, use CNTL-A followed by CNTL-X.
+# To exit picocom, use CTRL-A followed by CTRL-X.
 
 ###############################################################################
 ### Other Libraries
@@ -32,11 +33,9 @@ picocom -b 9600 -r -l /dev/ttyACM0
 arduino-cli lib update-index
 arduino-cli lib install DynamixelShield Servo
 
-
 ###############################################################################
 ### Detect Hardware
 ###############################################################################
-
 apt -y install hwinfo
 
 ### Senario 1.A : Plug in Arduino MKR WiFI 1010 as NORMAL start up mode
