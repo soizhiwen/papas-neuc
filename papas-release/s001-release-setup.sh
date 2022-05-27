@@ -34,6 +34,7 @@ arduino-cli compile --fqbn arduino:samd:mkrwifi1010 arduino
 arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkrwifi1010 arduino
 
 # Open new terminal
+su -
 source /usr/local/bin/venv/bin/activate
 cd /home/engineer/papas-neuc/papas-release/app-02-execution/python
 python main.py
