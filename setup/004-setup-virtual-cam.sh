@@ -27,6 +27,9 @@ apt -y install v4l2loopback-dkms v4l2loopback-utils \
     gstreamer1.0-tools gstreamer1.0-plugins-good libopencv-dev \
     build-essential
 
+### For RaspberryPi, install RPi kernel header
+apt -y install raspberrypi-kernel-headers
+
 modprobe v4l2loopback \
 	devices=1 exclusive_caps=1 video_nr=6 \
 	card_label="OpenCV Camera"
